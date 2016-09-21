@@ -1,5 +1,5 @@
 from model.base_test import BaseTest
-from pages.login_page.login_page import MainPage
+from pages.sign_in_page.sign_in_page import MainPage
 
 import pytest
 
