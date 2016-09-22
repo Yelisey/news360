@@ -1,36 +1,38 @@
 from model.base_test import BaseTest
-from pages.sign_in_page.sign_in_page import MainPage
+from pages.sign_up_page.sign_up_page import SignUpPage
 
 import pytest
 
 
 @pytest.fixture(scope="module")
-def main_page_obj(app):
-    return MainPage(app)
+def sign_up_page_obj(app):
+    return SignUpPage(app)
 
 
-class TestMainPage(BaseTest):
+class TestSignUpPage(BaseTest):
 
 
-    def test_open_sign_form(self, main_page_obj:MainPage):
-        main_page_obj.open_sign_form()
+    # def test_open_sign_form(self, sign_up_page_obj:SignUpPage):
+    #     sign_up_page_obj.open_sign_up_form()
+    #
+    #
+    # def test_login_with_correct_data(self, sign_up_page_obj: SignUpPage):
+    #     sign_up_page_obj.sign_up_with_correct_data_and_logout()
+    #
+    #
+    #
+    # def test_send_data_into_email_field(self, sign_up_page_obj:SignUpPage):
+    #     sign_up_page_obj.send_data_into_email_field()
 
 
-    def test_send_data_into_email_field(self, main_page_obj:MainPage):
-        main_page_obj.send_data_into_email_field()
+    def test_send_data_into_password_field(self, sign_up_page_obj:SignUpPage):
+        sign_up_page_obj.send_data_into_password_field()
 
 
-    def test_send_data_into_password_field(self, main_page_obj:MainPage):
-        main_page_obj.send_data_into_password_field()
+    def test_login_with_incorrect_full_data(self, sign_up_page_obj: SignUpPage):
+        sign_up_page_obj.login_with_incorrect_full_data()
 
 
-    def test_login_with_correct_data(self, main_page_obj: MainPage):
-        main_page_obj.login_with_correct_data_and_logout()
+    # def test_check_error_message(self, sign_up_page_obj: SignUpPage):
+    #     sign_up_page_obj.check_all_error_on_form()
 
-
-    def test_login_with_incorrect_full_data(self, main_page_obj: MainPage):
-        main_page_obj.login_with_incorrect_full_data()
-
-
-    def test_check_error_message(self, main_page_obj: MainPage):
-        main_page_obj.check_all_error_on_form()

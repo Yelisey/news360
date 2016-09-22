@@ -1,15 +1,21 @@
 element_name;value;id;name;class;cssSelector;tag;link;partialLinkText;xpath
 Start reading button;;;;;;;;;//a[@class="eNav startreading ng-binding"]
 Sign in with email link;;;;;;;;;//a[@class="expand fancybox login-signin ng-binding"]
+Sign up button;;;;;;;;;//div[@class="simpleauth"]//a[@class="signup ng-binding"]
+Sign up button 2;;;;;;;;;(//button[@class="green-button ladda-button signup-button ng-binding"])[2]
 
-Email;;;;;;;;;(//input[@type='email'])[3]
+Email;;;;;;;;;(//input[@type='email'])[2]
 Password;;;;;;;;;(//input[@type='password'])[10]
+Confirm password;;;;;;;;;//div[@class="bWrap"]//form[@class="confirmpassword ng-pristine ng-valid"]//input[@class="confirmpassword textbox"]
 
-Correct email field;testyelosh@rambler.ru;;;;;;;;(//input[@type='email'])[3]
-Correct password filed;Cfd56ao;;;;;;;;(//input[@type='password'])[10]
 
-Incorrect email field;estyelosh@rambler.ru;;;;;;;;(//input[@type='email'])[3]
-Incorrect password filed;fd56ao;;;;;;;;(//input[@type='password'])[10]
+Correct email field;testyelosh1@rambler.ru;;;;;;;;(//input[@type='email'])[2]
+Correct password filed;Cfd56ao;;;;;;;;(//input[@class="password textbox"])[5]
+Confirm password;Cfd56ao;;;;;;;;(//input[@class="confirmpassword textbox"])[4]
+
+
+Incorrect email field;estyelosh@rambler.ru;;;;;;;;(//input[@type='email'])[2]
+Incorrect password filed;fd56ao;;;;;;;;(//input[@class="password textbox"])[5]
 
 Email field with space; ;;;;;;;;(//input[@type='email'])[3]
 Email field with broken mask;test@;;;;;;;;(//input[@type='email'])[3]
@@ -24,3 +30,5 @@ Logout;;;;;;;;;//div[@class="ebutton logout ng-binding"]
 Error for empty email;This value is required.;;;;;;;;//ul[@class="parsley-error-list"]//li
 Error for all field;Invalid login or password;;;;;;;;//div[@class="simplepopup expand"]//div[@class="error-message message ng-binding"]
 Error for email;This value should be a valid email.;;;;;;;;//ul[@class="parsley-error-list"]//li
+
+Start reading button;;;;;;;;;//div[@class="startReading ng-binding show"]

@@ -2,7 +2,7 @@
 from model.application import Application
 
 
-class MainPage(object):
+class SignInPage(object):
 
 
     def __init__(self, app: Application):
