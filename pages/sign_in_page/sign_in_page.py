@@ -22,16 +22,16 @@ class MainPage(object):
         self.app.get_wait_helper.implicitly_wait(3)
 
 
-    def click_sign_in_button(self):
-        self.app.get_click_element_helper.click_element(self.app.get_config("Sign in button"))
-
-
     def login(self, email_locator = None, password_locator = None):
         self.open_sign_form()
         self.app.get_set_value_helper.set_value_field(self.app.get_config(email_locator))
         self.app.get_set_value_helper.set_value_field(self.app.get_config(password_locator))
         self.click_sign_in_button()
         self.app.get_wait_helper.implicitly_wait(3)
+
+
+    def click_sign_in_button(self):
+        self.app.get_click_element_helper.click_element(self.app.get_config("Sign in button"))
 
 
     def send_data_into_email_field(self):
@@ -44,7 +44,7 @@ class MainPage(object):
         self.app.get_set_value_helper.set_value_field(self.app.get_config("Correct password filed"))
 
 
-    def clear_data(self, email_locator, password_locator):
+    def clar_data(self, email_locator, password_locator):
         self.app.get_set_value_helper.clear_field(email_locator)
         self.app.get_set_value_helper.clear_field(password_locator)
 
