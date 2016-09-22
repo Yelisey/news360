@@ -38,4 +38,3 @@ class TestSignUpPage(BaseTest):
 
     def test_check_error_message(self, sign_up_page_obj: SignUpPage):
         sign_up_page_obj.check_all_error_on_form()
-

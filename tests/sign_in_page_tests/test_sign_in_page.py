@@ -13,7 +13,7 @@ class TestSignInPage(BaseTest):
 
 
     def test_open_sign_in_form(self, sign_in_page_obj:SignInPage):
-        sign_in_page_obj.open_sign_form()
+        sign_in_page_obj.open_sign_in_form()
 
 
     def test_send_data_into_email_field(self, sign_in_page_obj:SignInPage):
