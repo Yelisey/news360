@@ -2,7 +2,6 @@ from selenium import webdriver
 from element_helpers.find_element_helper import FindElementHelper
 
 
-
 class TextElementHelper(object):
 
 

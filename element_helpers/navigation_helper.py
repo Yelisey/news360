@@ -1,9 +1,6 @@
 # coding: utf-8
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchWindowException as error
 from element_helpers.find_element_helper import FindElementHelper
-
-import logging
 
 
 class NavigationHelper(object):

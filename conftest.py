@@ -1,9 +1,6 @@
 from selenium import webdriver
 
-
 import pytest
-import os
-import time
 
 
 #переопределенные атрибуты py.test

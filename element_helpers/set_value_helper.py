@@ -1,8 +1,5 @@
 from selenium import webdriver
-from selenium.webdriver.support.select import Select
 from element_helpers.find_element_helper import FindElementHelper
-
-import logging
 
 
 class SetValueHelper(object):

@@ -1,6 +1,5 @@
 from element_helpers.parse_csv_helper import ParseCSV
 
-import logging
 import configparser
 import os
 
