@@ -5,11 +5,11 @@ Sign in with email link;;;;;;;;;//a[@class="expand fancybox login-signin ng-bind
 Email;;;;;;;;;(//input[@type='email'])[3]
 Password;;;;;;;;;(//input[@type='password'])[10]
 
-Correct email field;testyelosh@rambler.ru;;;;;;;;(//input[@type='email'])[3]
-Correct password filed;Cfd56ao;;;;;;;;(//input[@type='password'])[10]
+Correct data in email field;testyelosh@rambler.ru;;;;;;;;(//input[@type='email'])[3]
+Correct data in password filed;Cfd56ao;;;;;;;;(//input[@type='password'])[10]
 
-Incorrect email field;estyelosh@rambler.ru;;;;;;;;(//input[@type='email'])[3]
-Incorrect password filed;fd56ao;;;;;;;;(//input[@type='password'])[10]
+Incorrect data in email field;estyelosh@rambler.ru;;;;;;;;(//input[@type='email'])[3]
+Incorrect data in password filed;fd56ao;;;;;;;;(//input[@type='password'])[10]
 
 Email field with space; ;;;;;;;;(//input[@type='email'])[3]
 Email field with broken mask;test@;;;;;;;;(//input[@type='email'])[3]

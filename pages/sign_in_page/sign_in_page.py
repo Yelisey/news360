@@ -36,12 +36,12 @@ class SignInPage(object):
 
     def send_data_into_email_field(self):
         self.open_sign_in_form()
-        self.app.get_set_value_helper.set_value_field(self.app.get_config("Correct email field"))
+        self.app.get_set_value_helper.set_value_field(self.app.get_config("Correct data in email field"))
 
 
     def send_data_into_password_field(self):
         self.open_sign_in_form()
-        self.app.get_set_value_helper.set_value_field(self.app.get_config("Correct password filed"))
+        self.app.get_set_value_helper.set_value_field(self.app.get_config("Correct data in password filed"))
 
 
     def clar_data(self, email_locator, password_locator):
@@ -50,12 +50,12 @@ class SignInPage(object):
 
 
     def login_with_correct_data_and_logout(self):
-        self.sign_in("Correct email field", "Correct password filed")
+        self.sign_in("Correct data in email field", "Correct data in password filed")
         self.logout()
 
 
     def login_with_incorrect_full_data(self):
-        self.sign_in("Incorrect email field", "Incorrect password filed")
+        self.sign_in("Incorrect data in email field", "Incorrect data in password filed")
 
 
     def check_all_error_on_form(self):
@@ -67,9 +67,9 @@ class SignInPage(object):
         self.app.get_text_element_helper.check_text_element(self.app.get_config("Error for empty email"))
 
 
-        self.sign_in("Email field with broken mask", "Incorrect password filed")
+        self.sign_in("Email field with broken mask", "Incorrect data in password filed")
         self.app.get_text_element_helper.check_text_element(self.app.get_config("Error for email"))
 
 
-        self.sign_in("Email field with space", "Correct password filed")
+        self.sign_in("Email field with space", "Correct data in password filed")
         self.app.get_text_element_helper.check_text_element(self.app.get_config("Error for email"))
