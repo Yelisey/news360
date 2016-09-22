@@ -7,7 +7,6 @@ from element_helpers.navigation_helper import NavigationHelper
 from element_helpers.wait_helpers import WaitHelper
 
 
-
 class ClickElementHelper(object):
 
 
@@ -35,10 +34,8 @@ class ClickElementHelper(object):
         self.find_element_helper._get_locator(element)
         if check_text:
             self.text_element_helper.check_text_element(element)
-
         if object_element.is_displayed():
             object_element.click()
-
         else:
             objects = self.find_element_helper.search_elements(element)
             for object_element in objects:

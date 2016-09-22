@@ -24,7 +24,7 @@ class FindElementHelper(object):
     def _check_value(self, element: dict):
         try:
             if element["value"]:
-                print ("Ok")
+                print ("Проверка наличия value у элемента прошла успешно")
         except KeyError:
             assert False
 
@@ -117,7 +117,7 @@ class FindElementHelper(object):
     def find_and_check_count_of_elements(self, element: dict, expected_value: int):
         current_count = (len(self.search_elements(element)))
         if current_count == expected_value:
-            print ("Ok")
+            print ("Ожидаемое количество элементов совпало с тем, что на странице")
         else:
-            print ("Fail")
+            print ("Ошибка. Количество элементов на странице не совпадает с тем, что ожидали")
             assert False

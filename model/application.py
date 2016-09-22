@@ -9,7 +9,6 @@ from element_helpers.text_element_helper import TextElementHelper
 from element_helpers.wait_helpers import WaitHelper
 
 
-
 class Application(object):
 
 
