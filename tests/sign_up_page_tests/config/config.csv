@@ -1,0 +1,26 @@
+element_name;value;id;name;class;cssSelector;tag;link;partialLinkText;xpath
+Start reading button;;;;;;;;;//a[@class="eNav startreading ng-binding"]
+Sign in with email link;;;;;;;;;//a[@class="expand fancybox login-signin ng-binding"]
+
+Email;;;;;;;;;(//input[@type='email'])[3]
+Password;;;;;;;;;(//input[@type='password'])[10]
+
+Correct email field;testyelosh@rambler.ru;;;;;;;;(//input[@type='email'])[3]
+Correct password filed;Cfd56ao;;;;;;;;(//input[@type='password'])[10]
+
+Incorrect email field;estyelosh@rambler.ru;;;;;;;;(//input[@type='email'])[3]
+Incorrect password filed;fd56ao;;;;;;;;(//input[@type='password'])[10]
+
+Email field with space; ;;;;;;;;(//input[@type='email'])[3]
+Email field with broken mask;test@;;;;;;;;(//input[@type='email'])[3]
+
+
+Sign in button;;;;;;;;;//button[@class="green-button ladda-button signin-button ng-binding"]
+Cancel button//button[@class="cancel-button green-button ladda-button ng-binding"]
+Username;;;;;;;;;//span[@class="username ng-binding"]
+Logout;;;;;;;;;//div[@class="ebutton logout ng-binding"]
+
+
+Error for empty email;This value is required.;;;;;;;;//ul[@class="parsley-error-list"]//li
+Error for all field;Invalid login or password;;;;;;;;//div[@class="simplepopup expand"]//div[@class="error-message message ng-binding"]
+Error for email;This value should be a valid email.;;;;;;;;//ul[@class="parsley-error-list"]//li
