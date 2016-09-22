@@ -2,8 +2,6 @@
 from selenium.common.exceptions import NoSuchElementException as error
 from selenium import webdriver
 
-import logging
-
 
 class FindElementHelper(object):
 
@@ -114,3 +112,12 @@ class FindElementHelper(object):
     # Получение объектов элемента на странице
     def search_elements(self, element: dict) -> webdriver:
         return self.__find_elements(element)
+
+
+    def find_and_check_count_of_elements(self, element: dict, expected_value: int):
+        current_count = (len(self.search_elements(element)))
+        if current_count == expected_value:
+            print ("Ok")
+        else:
+            print ("Fail")
+            assert False

@@ -8,7 +8,6 @@ from element_helpers.set_value_helper import SetValueHelper
 from element_helpers.text_element_helper import TextElementHelper
 from element_helpers.wait_helpers import WaitHelper
 
-import logging
 
 
 class Application(object):

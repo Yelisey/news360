@@ -1,8 +1,6 @@
 from selenium import webdriver
 from element_helpers.find_element_helper import FindElementHelper
 
-import logging
-import re
 
 
 class TextElementHelper(object):
@@ -28,9 +26,22 @@ class TextElementHelper(object):
 
     def get_text_element(self, element: dict):
         object_element = self.find_element_helper.search_element(element)
-        self.find_element_helper._get_locator(element)
         try:
             text_element_on_page = object_element.text
         except Exception:
+            assert False
+        return text_element_on_page
+
+
+    def get_text_elements(self, element: dict):
+        objects = self.find_element_helper.search_elements(element)
+        text_element_on_page = list()
+        try:
+            for object_element in objects:
+                if object_element.text:
+                    text_element_on_page.append(object_element.text)
+                print("Текст элементов успешно получен")
+        except Exception:
+            print("Текст элементов невозможно получить!!")
             assert False
         return text_element_on_page

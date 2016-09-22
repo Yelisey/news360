@@ -1,13 +1,11 @@
 # coding: utf-8
 from selenium import webdriver
 from selenium.common.exceptions import ElementNotVisibleException as error
-from selenium.webdriver.common.action_chains import ActionChains
 from element_helpers.text_element_helper import TextElementHelper
 from element_helpers.find_element_helper import FindElementHelper
 from element_helpers.navigation_helper import NavigationHelper
 from element_helpers.wait_helpers import WaitHelper
 
-import logging
 
 
 class ClickElementHelper(object):
