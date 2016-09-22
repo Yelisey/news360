@@ -12,28 +12,28 @@ def sign_up_page_obj(app):
 class TestSignUpPage(BaseTest):
 
 
-    # def test_open_sign_form(self, sign_up_page_obj:SignUpPage):
-    #     sign_up_page_obj.open_sign_up_form()
-    #
-    #
-    # def test_login_with_correct_data(self, sign_up_page_obj: SignUpPage):
-    #     sign_up_page_obj.sign_up_with_correct_data_and_logout()
-    #
-    #
-    # def test_send_data_into_email_field(self, sign_up_page_obj:SignUpPage):
-    #     sign_up_page_obj.send_data_into_email_field()
-    #
-    #
-    # def test_send_data_into_password_field(self, sign_up_page_obj:SignUpPage):
-    #     sign_up_page_obj.send_data_into_password_field()
-    #
-    #
-    # def test_send_data_into_confirm_password_field(self, sign_up_page_obj:SignUpPage):
-    #     sign_up_page_obj.send_data_into_confirm_password_field()
-    #
-    #
-    # def test_login_with_incorrect_full_data(self, sign_up_page_obj: SignUpPage):
-    #     sign_up_page_obj.login_with_incorrect_full_data()
+    def test_open_sign_up_form(self, sign_up_page_obj:SignUpPage):
+        sign_up_page_obj.open_sign_up_form()
+
+
+    def test_sign_up_with_correct_data(self, sign_up_page_obj: SignUpPage):
+        sign_up_page_obj.sign_up_with_correct_data_and_logout()
+
+
+    def test_send_data_into_email_field(self, sign_up_page_obj:SignUpPage):
+        sign_up_page_obj.send_data_into_email_field()
+
+
+    def test_send_data_into_password_field(self, sign_up_page_obj:SignUpPage):
+        sign_up_page_obj.send_data_into_password_field()
+
+
+    def test_send_data_into_confirm_password_field(self, sign_up_page_obj:SignUpPage):
+        sign_up_page_obj.send_data_into_confirm_password_field()
+
+
+    def test_sign_up_with_incorrect_full_data(self, sign_up_page_obj: SignUpPage):
+        sign_up_page_obj.login_with_incorrect_full_data()
 
 
     def test_check_error_message(self, sign_up_page_obj: SignUpPage):

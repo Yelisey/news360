@@ -12,7 +12,7 @@ def sign_in_page_obj(app):
 class TestSignInPage(BaseTest):
 
 
-    def test_open_sign_form(self, sign_in_page_obj:SignInPage):
+    def test_open_sign_in_form(self, sign_in_page_obj:SignInPage):
         sign_in_page_obj.open_sign_form()
 
 
@@ -24,11 +24,11 @@ class TestSignInPage(BaseTest):
         sign_in_page_obj.send_data_into_password_field()
 
 
-    def test_login_with_correct_data(self, sign_in_page_obj: SignInPage):
+    def test_sign_in_with_correct_data(self, sign_in_page_obj: SignInPage):
         sign_in_page_obj.login_with_correct_data_and_logout()
 
 
-    def test_login_with_incorrect_full_data(self, sign_in_page_obj: SignInPage):
+    def test_sign_in_with_incorrect_full_data(self, sign_in_page_obj: SignInPage):
         sign_in_page_obj.login_with_incorrect_full_data()
 
 
